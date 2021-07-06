@@ -1,0 +1,18 @@
+<!-- {{status | async | uppercase}}
+
+<br/>
+
+<input type='text' [value]="title" (input)="updateTitle($event)">
+<button (click)="onAdd()">Add</button>
+
+<app-product *ngFor="let item of allgroceries; let i = index " 
+[product]="item" (delete)="onDelete($event)">
+ Content Projection
+single-slot
+<div>
+<h2>Title {{item.title}}</h2>
+</div>
+
+ multiple-slot
+conditional
+-->
